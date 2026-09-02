@@ -38,7 +38,7 @@ export default function Header() {
 
         {/* 2. Navigation (Desktop) */}
         <nav className="hidden md:flex items-center gap-[20px]">
-          <a href="/#presentation" className="text-[14px] text-gray-800 hover:text-[#006900] hover:underline underline-offset-4 transition-colors">Présentation</a>
+          <a href="/#presentation" className="text-[14px] text-gray-800 hover:text-[#006900] hover:underline underline-offset-4 transition-colors">Qui sommes nous ?</a>
           <a href="/#actualites" className="text-[14px] text-gray-800 hover:text-[#006900] hover:underline underline-offset-4 transition-colors">Actualités</a>
           <a href="/#formations" className="text-[14px] text-gray-800 hover:text-[#006900] hover:underline underline-offset-4 transition-colors">Formations</a>
           <a href="/#admissions" className="text-[14px] text-gray-800 hover:text-[#006900] hover:underline underline-offset-4 transition-colors">Admissions</a>
@@ -74,7 +74,7 @@ export default function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full">
           <nav className="flex flex-col px-4 py-4 space-y-4">
-            <a href="/#presentation" onClick={() => setMobileMenuOpen(false)} className="text-[15px] font-medium text-gray-800 hover:text-[#006900]">Présentation</a>
+            <a href="/#presentation" onClick={() => setMobileMenuOpen(false)} className="text-[15px] font-medium text-gray-800 hover:text-[#006900]">Qui sommes nous ?</a>
             <a href="/#actualites" onClick={() => setMobileMenuOpen(false)} className="text-[15px] font-medium text-gray-800 hover:text-[#006900]">Actualités</a>
             <a href="/#formations" onClick={() => setMobileMenuOpen(false)} className="text-[15px] font-medium text-gray-800 hover:text-[#006900]">Formations</a>
             <a href="/#admissions" onClick={() => setMobileMenuOpen(false)} className="text-[15px] font-medium text-gray-800 hover:text-[#006900]">Admissions</a>

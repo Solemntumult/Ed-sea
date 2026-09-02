@@ -18,23 +18,24 @@ export default function VitrinePage() {
       <main className="flex-grow">
         
         {/* HERO SECTION / BANNIERE */}
-        <section className="relative text-white py-24 sm:py-32 overflow-hidden border-b-4 border-gray-200 bg-gradient-to-br from-[#162534] via-[#0b1722] to-[#006900]">
-          {/* Motif UAC superposé sur le fond sombre */}
-          <div className="absolute inset-0 opacity-10 mix-blend-overlay" style={{ backgroundImage: "url('https://etudiant.uac.bj/assets/bg_motif-ByefhJfp.png')", backgroundRepeat: 'repeat', backgroundSize: '400px' }}></div>
-          <div className="absolute inset-0 bg-black opacity-20"></div> 
+        <section className="relative text-white py-24 sm:py-32 overflow-hidden border-b-4 border-gray-200 bg-cover bg-center" style={{ backgroundImage: "url('/hero_campus.jpg')" }}>
+          {/* Overlay dégradé sombre pour assurer une lisibilité parfaite du texte */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#162534]/95 via-[#0b1722]/80 to-transparent z-0"></div>
+          {/* Motif UAC subtil */}
+          <div className="absolute inset-0 opacity-10 mix-blend-overlay z-0" style={{ backgroundImage: "url('https://etudiant.uac.bj/assets/bg_motif-ByefhJfp.png')", backgroundRepeat: 'repeat', backgroundSize: '400px' }}></div>
           
           <div className="max-w-7xl mx-auto px-4 relative z-10 text-center sm:text-left">
-            <h2 className="text-4xl sm:text-6xl font-extrabold mb-6 tracking-tight leading-tight">
+            <h2 className="text-4xl sm:text-6xl font-extrabold mb-6 tracking-tight leading-tight drop-shadow-lg">
               Recherche scientifique <br className="hidden sm:block"/> d'Excellence à l'UAC
             </h2>
-            <p className="text-xl text-gray-200 mb-10 max-w-2xl font-light">
+            <p className="text-xl text-gray-200 mb-10 max-w-2xl font-medium drop-shadow-md">
               L'ED-SEA forme les futurs chercheurs et hauts cadres dans les domaines de la chimie, des mathématiques, de l'océanographie et de la didactique des sciences.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
               <Link href="/candidature" className="bg-white text-[#006900] px-8 py-3 rounded font-extrabold text-lg hover:bg-gray-100 transition shadow-lg text-center">
                 S'inscrire (Appel 2026-2027)
               </Link>
-              <a href="#formations" className="bg-transparent border-2 border-white px-8 py-3 rounded font-bold text-lg hover:bg-white hover:text-[#162534] transition text-center">
+              <a href="#formations" className="bg-transparent border-2 border-white px-8 py-3 rounded font-bold text-lg hover:bg-white hover:text-[#162534] transition shadow-lg text-center backdrop-blur-sm bg-black/20">
                 Découvrir nos formations
               </a>
             </div>
@@ -101,15 +102,13 @@ export default function VitrinePage() {
                 <h3 className="text-sm font-bold text-[#006900] uppercase tracking-widest mb-2">Informations</h3>
                 <h2 className="text-3xl font-extrabold text-[#162534]">Actualités de l'ED-SEA</h2>
               </div>
-              <a href="#" className="hidden sm:inline-block text-[#006900] font-bold hover:underline">Toutes les actualités</a>
             </div>
             
             <div className="grid md:grid-cols-3 gap-8">
               {/* Actu 1 */}
-              <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:-translate-y-1 transition duration-300">
-                <div className="h-32 bg-[#162534] flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  <span className="text-white text-opacity-30 text-6xl font-extrabold z-10 tracking-tighter">01</span>
+              <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:-translate-y-1 transition duration-300 group">
+                <div className="h-48 bg-cover bg-center relative overflow-hidden" style={{ backgroundImage: "url('/news_1.jpg')" }}>
+                  {/* Image éclatante sans overlay */}
                 </div>
                 <div className="p-6">
                   <span className="text-xs text-[#006900] font-bold uppercase mb-2 block">Candidature • 2026-2027</span>
@@ -117,14 +116,13 @@ export default function VitrinePage() {
                   <p className="text-sm text-gray-600 mb-4 line-clamp-3">
                     L'ED-SEA informe le public de l'ouverture officielle du dépôt des dossiers pour le second appel de l'année. Les candidats sont invités à soumettre leurs pièces justificatives en ligne avant le 28 septembre de rigueur.
                   </p>
-                  <a href="#admissions" className="text-[#006900] font-bold text-sm hover:underline flex items-center gap-1">Lire la suite <span className="text-lg leading-none">→</span></a>
+                  <a href="/actualites/candidatures-2026" className="text-[#006900] font-bold text-sm hover:underline flex items-center gap-1">Lire la suite <span className="text-lg leading-none">→</span></a>
                 </div>
               </div>
               {/* Actu 2 */}
-              <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:-translate-y-1 transition duration-300">
-                <div className="h-32 bg-[#006900] flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                  <span className="text-white text-opacity-30 text-6xl font-extrabold z-10 tracking-tighter">02</span>
+              <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:-translate-y-1 transition duration-300 group">
+                <div className="h-48 bg-cover bg-center relative overflow-hidden" style={{ backgroundImage: "url('/news_2.jpg')" }}>
+                  {/* Image éclatante sans overlay */}
                 </div>
                 <div className="p-6">
                   <span className="text-xs text-[#006900] font-bold uppercase mb-2 block">Académique • 12 Juin 2026</span>
@@ -132,14 +130,13 @@ export default function VitrinePage() {
                   <p className="text-sm text-gray-600 mb-4 line-clamp-3">
                     Consultez le planning officiel des soutenances de thèses publiques pour les départements de Chimie (FDCA) et de Mathématiques (FDSM). Les sessions se tiendront dans les amphithéâtres du campus central.
                   </p>
-                  <a href="#" className="text-[#006900] font-bold text-sm hover:underline flex items-center gap-1">Lire la suite <span className="text-lg leading-none">→</span></a>
+                  <a href="/actualites/soutenances-juin" className="text-[#006900] font-bold text-sm hover:underline flex items-center gap-1">Lire la suite <span className="text-lg leading-none">→</span></a>
                 </div>
               </div>
               {/* Actu 3 */}
-              <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:-translate-y-1 transition duration-300">
-                <div className="h-32 bg-[#162534] flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  <span className="text-white text-opacity-30 text-6xl font-extrabold z-10 tracking-tighter">03</span>
+              <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:-translate-y-1 transition duration-300 group">
+                <div className="h-48 bg-cover bg-center relative overflow-hidden" style={{ backgroundImage: "url('/news_3.jpg')" }}>
+                  {/* Image éclatante sans overlay */}
                 </div>
                 <div className="p-6">
                   <span className="text-xs text-[#006900] font-bold uppercase mb-2 block">Recherche • 5 Mai 2026</span>
@@ -147,7 +144,7 @@ export default function VitrinePage() {
                   <p className="text-sm text-gray-600 mb-4 line-clamp-3">
                     Le CIPMA organise sa grande conférence annuelle sur l'Océanographie Physique et les changements climatiques. Cet événement rassemblera des chercheurs de toute l'Afrique de l'Ouest autour de la modélisation côtière.
                   </p>
-                  <a href="#" className="text-[#006900] font-bold text-sm hover:underline flex items-center gap-1">Lire la suite <span className="text-lg leading-none">→</span></a>
+                  <a href="/actualites/colloque-cipma" className="text-[#006900] font-bold text-sm hover:underline flex items-center gap-1">Lire la suite <span className="text-lg leading-none">→</span></a>
                 </div>
               </div>
             </div>
@@ -351,9 +348,8 @@ export default function VitrinePage() {
         className="relative py-28 bg-fixed bg-top bg-cover mt-auto" 
         style={{ backgroundImage: "url('https://doctorat-unique.uac.bj/images/cta-secion-back.jpg')" }}
       >
-        {/* Voile d'assombrissement pour faire ressortir le texte */}
-        <div className="absolute inset-0 bg-[#0a1118]/70 mix-blend-multiply"></div>
-        <div className="absolute inset-0 bg-black/40"></div>
+        {/* Voile d'assombrissement allégé pour rendre l'image plus éclatante */}
+        <div className="absolute inset-0 bg-black/50"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
