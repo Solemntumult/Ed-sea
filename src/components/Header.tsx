@@ -46,12 +46,12 @@ export default function Header() {
 
         {/* 3. Bouton CTA (Desktop) + Burger (Mobile) */}
         <div className="flex items-center gap-4">
-          <Link 
-            href="/candidature" 
+          <a 
+            href="https://cuo.sigan-uac.bj/" target="_blank" rel="noopener noreferrer"
             className="hidden md:inline-flex bg-[#006900] text-white text-[14px] font-medium px-[16px] py-[9px] rounded-md hover:bg-[#005000] transition-colors shadow-sm"
           >
             Soumettre une candidature
-          </Link>
+          </a>
           
           {/* Mobile Menu Button */}
           <button 
@@ -79,13 +79,13 @@ export default function Header() {
             <a href="/#formations" onClick={() => setMobileMenuOpen(false)} className="text-[15px] font-medium text-gray-800 hover:text-[#006900]">Formations</a>
             <a href="/#admissions" onClick={() => setMobileMenuOpen(false)} className="text-[15px] font-medium text-gray-800 hover:text-[#006900]">Admissions</a>
             <div className="pt-4 border-t border-gray-100">
-              <Link 
-                href="/candidature" 
+              <a 
+                href="https://cuo.sigan-uac.bj/" target="_blank" rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block text-center bg-[#006900] text-white text-[15px] font-medium px-4 py-3 rounded-md hover:bg-[#005000] transition-colors"
               >
                 Soumettre une candidature
-              </Link>
+              </a>
             </div>
           </nav>
         </div>

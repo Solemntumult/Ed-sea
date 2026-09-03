@@ -32,9 +32,9 @@ export default function VitrinePage() {
               L'ED-SEA forme les futurs chercheurs et hauts cadres dans les domaines de la chimie, des mathématiques, de l'océanographie et de la didactique des sciences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
-              <Link href="/candidature" className="bg-white text-[#006900] px-8 py-3 rounded font-extrabold text-lg hover:bg-gray-100 transition shadow-lg text-center">
+              <a href="https://cuo.sigan-uac.bj/" target="_blank" rel="noopener noreferrer" className="bg-white text-[#006900] px-8 py-3 rounded font-extrabold text-lg hover:bg-gray-100 transition shadow-lg text-center">
                 S'inscrire (Appel 2026-2027)
-              </Link>
+              </a>
               <a href="#formations" className="bg-transparent border-2 border-white px-8 py-3 rounded font-bold text-lg hover:bg-white hover:text-[#162534] transition shadow-lg text-center backdrop-blur-sm bg-black/20">
                 Découvrir nos formations
               </a>
@@ -107,8 +107,9 @@ export default function VitrinePage() {
             <div className="grid md:grid-cols-3 gap-8">
               {/* Actu 1 */}
               <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:-translate-y-1 transition duration-300 group">
-                <div className="h-48 bg-cover bg-center relative overflow-hidden" style={{ backgroundImage: "url('/news_1.jpg')" }}>
-                  {/* Image éclatante sans overlay */}
+                <div className="h-48 bg-cover bg-center relative overflow-hidden saturate-[.80] sepia-[.15] contrast-[.95]" style={{ backgroundImage: "url('/news_1.jpg')" }}>
+                  {/* Filtre pour atténuer l'effet "IA" et donner un aspect photographique plus naturel */}
+                  <div className="absolute inset-0 bg-yellow-900/10 mix-blend-multiply"></div>
                 </div>
                 <div className="p-6">
                   <span className="text-xs text-[#006900] font-bold uppercase mb-2 block">Candidature • 2026-2027</span>
@@ -121,8 +122,9 @@ export default function VitrinePage() {
               </div>
               {/* Actu 2 */}
               <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:-translate-y-1 transition duration-300 group">
-                <div className="h-48 bg-cover bg-center relative overflow-hidden" style={{ backgroundImage: "url('/news_2.jpg')" }}>
-                  {/* Image éclatante sans overlay */}
+                <div className="h-48 bg-cover bg-center relative overflow-hidden saturate-[.80] sepia-[.15] contrast-[.95]" style={{ backgroundImage: "url('/news_2.jpg')" }}>
+                  {/* Filtre pour atténuer l'effet "IA" et donner un aspect photographique plus naturel */}
+                  <div className="absolute inset-0 bg-yellow-900/10 mix-blend-multiply"></div>
                 </div>
                 <div className="p-6">
                   <span className="text-xs text-[#006900] font-bold uppercase mb-2 block">Académique • 12 Juin 2026</span>
@@ -135,8 +137,9 @@ export default function VitrinePage() {
               </div>
               {/* Actu 3 */}
               <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:-translate-y-1 transition duration-300 group">
-                <div className="h-48 bg-cover bg-center relative overflow-hidden" style={{ backgroundImage: "url('/news_3.jpg')" }}>
-                  {/* Image éclatante sans overlay */}
+                <div className="h-48 bg-cover bg-center relative overflow-hidden saturate-[.80] sepia-[.15] contrast-[.95]" style={{ backgroundImage: "url('/news_3.jpg')" }}>
+                  {/* Filtre pour atténuer l'effet "IA" et donner un aspect photographique plus naturel */}
+                  <div className="absolute inset-0 bg-yellow-900/10 mix-blend-multiply"></div>
                 </div>
                 <div className="p-6">
                   <span className="text-xs text-[#006900] font-bold uppercase mb-2 block">Recherche • 5 Mai 2026</span>
@@ -232,9 +235,9 @@ export default function VitrinePage() {
                   </div>
                 </div>
                 <div className="mt-8 relative z-10">
-                  <Link href="/candidature" className="block text-center bg-white text-[#006900] px-6 py-4 rounded font-extrabold hover:bg-gray-100 transition uppercase tracking-wide shadow-md">
+                  <a href="https://cuo.sigan-uac.bj/" target="_blank" rel="noopener noreferrer" className="block text-center bg-white text-[#006900] px-6 py-4 rounded font-extrabold hover:bg-gray-100 transition uppercase tracking-wide shadow-md">
                     Soumettre mon dossier maintenant
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
