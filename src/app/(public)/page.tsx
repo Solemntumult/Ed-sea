@@ -422,6 +422,8 @@ export default function VitrinePage() {
 
             </div>
           </div>
+        </section>
+
         {/* SECTION: LABORATOIRES & PARTENAIRES */}
         <section id="recherche" className="py-20 relative bg-gray-50 border-t border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
