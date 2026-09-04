@@ -438,7 +438,6 @@ export default function VitrinePage() {
             {/* Laboratoires associés */}
             <div className="mb-20">
               <div className="flex items-center gap-3 mb-8 border-b border-gray-200 pb-3">
-                <svg className="w-8 h-8 text-[#006900]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
                 <h3 className="text-2xl font-bold text-[#162534]">6 Laboratoires Rattachés</h3>
               </div>
               
@@ -451,10 +450,7 @@ export default function VitrinePage() {
                   { name: "Laboratoire de Recherche en Mathématiques Fondamentales et Applications", acronym: "LaRMFA", decree: "Arrêté n°018 du 15/01/2025" },
                   { name: "Laboratoire de Recherche en Physique Théorique et Applications", acronym: "LaRPTA", decree: "Arrêté n°249 du 14/03/2025" }
                 ].map((lab, idx) => (
-                  <div key={idx} className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-100 transition-all duration-300 p-8 flex flex-col items-center text-center group">
-                    <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center text-[#162534] font-extrabold text-xl mb-6 group-hover:bg-[#006900] group-hover:text-white transition-colors duration-300 shadow-sm border border-gray-100">
-                      {lab.acronym.substring(0, 3)}
-                    </div>
+                  <div key={idx} className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-100 transition-all duration-300 p-8 flex flex-col items-center justify-center text-center group h-full">
                     <h4 className="font-bold text-[#162534] text-sm mb-2">{lab.name}</h4>
                     <span className="text-[#006900] font-extrabold text-lg mb-4">{lab.acronym}</span>
                     <p className="text-xs text-gray-400 mt-auto font-medium">{lab.decree}</p>
@@ -466,45 +462,31 @@ export default function VitrinePage() {
             {/* Partenaires de coopération */}
             <div>
               <div className="flex items-center gap-3 mb-8 border-b border-gray-200 pb-3">
-                <svg className="w-8 h-8 text-[#006900]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
                 <h3 className="text-2xl font-bold text-[#162534]">Partenaires de Coopération</h3>
               </div>
               
-              <div className="space-y-12">
-                {/* Nationaux */}
-                <div>
-                  <h4 className="text-sm font-bold text-gray-500 mb-6 uppercase tracking-wider">Partenaires nationaux</h4>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    <a href="/pdfs/partenariat_una.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-200 hover:border-[#006900] transition-all duration-300 p-6 flex flex-col items-center justify-center group h-48">
-                      <div className="h-24 w-full flex items-center justify-center mb-4">
-                        <img src="/logos/logo_una.png" alt="UNA EDSAE" className="max-h-full max-w-full object-contain transition duration-300" />
-                      </div>
-                      <span className="text-xs font-bold text-center text-gray-700 group-hover:text-[#006900]">Université Nationale d'Agriculture</span>
-                    </a>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <a href="/pdfs/partenariat_una.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-200 hover:border-[#006900] transition-all duration-300 p-6 flex flex-col items-center justify-center group h-48">
+                  <div className="h-24 w-full flex items-center justify-center mb-4">
+                    <img src="/logos/logo_una.png" alt="UNA EDSAE" className="max-h-full max-w-full object-contain transition duration-300" />
                   </div>
-                </div>
+                  <span className="text-xs font-bold text-center text-gray-700 group-hover:text-[#006900]">Université Nationale d'Agriculture</span>
+                </a>
 
-                {/* Internationaux */}
-                <div>
-                  <h4 className="text-sm font-bold text-gray-500 mb-6 uppercase tracking-wider">Partenaires internationaux</h4>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    <a href="/pdfs/convention_toulouse.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-200 hover:border-[#006900] transition-all duration-300 p-6 flex flex-col items-center justify-center group h-48">
-                      <div className="h-24 w-full flex items-center justify-center mb-4">
-                        <img src="/logos/logo_toulouse.png" alt="Université de Toulouse" className="max-h-full max-w-full object-contain transition duration-300" />
-                      </div>
-                      <span className="text-xs font-bold text-center text-gray-700 group-hover:text-[#006900]">Université de Toulouse</span>
-                    </a>
-                    
-                    <a href="/pdfs/convention_vrije.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-200 hover:border-[#006900] transition-all duration-300 p-6 flex flex-col items-center justify-center group h-48">
-                      <div className="h-24 w-full flex items-center justify-center mb-4">
-                        <img src="/logos/logo_vrije.png" alt="Vrije Universiteit Brussel" className="max-h-full max-w-full object-contain transition duration-300" />
-                      </div>
-                      <span className="text-xs font-bold text-center text-gray-700 group-hover:text-[#006900]">Vrije Universiteit Brussel</span>
-                    </a>
+                <a href="/pdfs/convention_toulouse.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-200 hover:border-[#006900] transition-all duration-300 p-6 flex flex-col items-center justify-center group h-48">
+                  <div className="h-24 w-full flex items-center justify-center mb-4">
+                    <img src="/logos/logo_toulouse.png" alt="Université de Toulouse" className="max-h-full max-w-full object-contain transition duration-300" />
                   </div>
-                </div>
+                  <span className="text-xs font-bold text-center text-gray-700 group-hover:text-[#006900]">Université de Toulouse</span>
+                </a>
+                
+                <a href="/pdfs/convention_vrije.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-200 hover:border-[#006900] transition-all duration-300 p-6 flex flex-col items-center justify-center group h-48">
+                  <div className="h-24 w-full flex items-center justify-center mb-4">
+                    <img src="/logos/logo_vrije.png" alt="Vrije Universiteit Brussel" className="max-h-full max-w-full object-contain transition duration-300" />
+                  </div>
+                  <span className="text-xs font-bold text-center text-gray-700 group-hover:text-[#006900]">Vrije Universiteit Brussel</span>
+                </a>
               </div>
-
             </div>
           </div>
         </section>
