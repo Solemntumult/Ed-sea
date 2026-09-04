@@ -64,7 +64,7 @@ export default function VitrinePage() {
               </div>
               <div className="bg-white/80 backdrop-blur-md rounded-2xl p-2 shadow-xl border border-gray-200">
                 <div className="relative p-8 text-center">
-                  <img src="/logo_edsea.png" alt="Emblème ED-SEA" className="h-32 mx-auto mb-6 drop-shadow-md" />
+                  <img src="/logo_edsea.jpg" alt="Emblème ED-SEA" className="h-32 mx-auto mb-6 drop-shadow-md" />
                   <h4 className="font-bold text-xl mb-4 text-[#006900]">L'ED-SEA en Chiffres</h4>
                   <div className="grid grid-cols-2 gap-3 text-left border-t border-gray-200 pt-4">
                     <div className="bg-white/60 p-3 rounded-lg border border-gray-100 hover:shadow-md transition">
