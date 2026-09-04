@@ -32,7 +32,7 @@ export default function Header() {
           />
           <div className="flex flex-col justify-center">
             <span className="text-[14px] font-medium text-gray-900 leading-tight">ED-SEA</span>
-            <span className="text-[11px] text-gray-500 leading-tight hidden sm:block">École doctorale sciences exactes et appliquées</span>
+            <span className="text-[11px] text-gray-500 leading-tight hidden sm:block">École doctorale des sciences exactes et appliquées</span>
           </div>
         </Link>
 

@@ -32,7 +32,7 @@ export default function VitrinePage() {
               L'ED-SEA forme les futurs chercheurs et hauts cadres dans les domaines de la chimie, des mathématiques, de l'océanographie et de la didactique des sciences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
-              <a href="https://cuo.sigan-uac.bj/" target="_blank" rel="noopener noreferrer" className="bg-white text-[#006900] px-8 py-3 rounded font-extrabold text-lg hover:bg-gray-100 transition shadow-lg text-center">
+              <a href="/pdfs/appel_candidature.pdf" target="_blank" rel="noopener noreferrer" className="bg-white text-[#006900] px-8 py-3 rounded font-extrabold text-lg hover:bg-gray-100 transition shadow-lg text-center">
                 S'inscrire (Appel 2026-2027)
               </a>
               <a href="#formations" className="bg-transparent border-2 border-white px-8 py-3 rounded font-bold text-lg hover:bg-white hover:text-[#162534] transition shadow-lg text-center backdrop-blur-sm bg-black/20">
@@ -52,16 +52,13 @@ export default function VitrinePage() {
                 <h2 className="text-3xl font-extrabold text-[#162534] mb-6">Bienvenue à l'ED-SEA</h2>
                 <div className="space-y-4 text-gray-700 leading-relaxed font-medium">
                   <p>
-                    Chères candidates, chers candidats, soyez les bienvenus sur le portail de l'École Doctorale des Sciences Exactes et Appliquées (ED-SEA) de l'Université d'Abomey-Calavi.
+                    L’École Doctorale des Sciences Exactes et Appliquées (ED-SEA) est un établissement d'enseignement supérieur offrant un encadrement scientifique personnalisé de haut niveau pour la préparation d'une thèse de doctorat.
                   </p>
                   <p>
-                    Créée pour répondre aux défis majeurs du développement technologique et scientifique de notre continent, l'ED-SEA s'impose aujourd'hui comme un pôle d'excellence incontournable en Afrique de l'Ouest. Notre mission est claire : former des chercheurs innovants et des hauts cadres capables de repousser les frontières de la connaissance dans les disciplines fondamentales.
+                    Conformément au <strong>décret-2024-1055 du 24 juillet 2024</strong> de l'UAC, l’ED-SEA a pour mission d'assurer la coordination des Formations Doctorales, de préparer les offres de formation, de veiller à l'encadrement des doctorants, et de contribuer activement au développement de la recherche scientifique et à l'insertion professionnelle.
                   </p>
                   <p>
-                    En choisissant l'ED-SEA, vous intégrez un écosystème dynamique, encadrés par des enseignants-chercheurs de rang magistral et adossés à des laboratoires partenaires de renommée internationale. Nous vous offrons un cadre de rigueur et d'éthique, propice à l'épanouissement intellectuel et à l'excellence académique.
-                  </p>
-                  <p className="font-bold text-[#162534] italic pt-2 border-t border-gray-300 mt-4">
-                    Le Directeur de l'École Doctorale
+                    La Formation Doctorale est un cursus structuré en <strong>6 semestres (180 crédits)</strong>. Elle comprend 60 crédits dédiés à l'approfondissement théorique, la pédagogie et la rédaction scientifique, et 120 crédits réservés au travail de recherche approfondie.
                   </p>
                 </div>
               </div>
@@ -75,8 +72,8 @@ export default function VitrinePage() {
                       <span className="text-xs text-gray-500 font-bold uppercase">Pôles de formation</span>
                     </div>
                     <div className="bg-white/60 p-3 rounded-lg border border-gray-100 hover:shadow-md transition">
-                      <span className="block text-2xl font-extrabold text-[#162534]">12+</span>
-                      <span className="text-xs text-gray-500 font-bold uppercase">Laboratoires associés</span>
+                      <span className="block text-2xl font-extrabold text-[#162534]">6+</span>
+                      <span className="text-xs text-gray-500 font-bold uppercase">Laboratoires rattachés</span>
                     </div>
                     <div className="bg-white/60 p-3 rounded-lg border border-gray-100 hover:shadow-md transition">
                       <span className="block text-2xl font-extrabold text-[#162534]">150+</span>
@@ -241,6 +238,49 @@ export default function VitrinePage() {
                 </div>
               </div>
             </div>
+
+            {/* Droits Universitaires */}
+            <div className="bg-white/90 backdrop-blur-md p-8 rounded-xl shadow-lg border border-gray-100 border-t-4 border-t-[#006900] mt-12">
+              <h4 className="text-xl font-bold text-[#162534] mb-6">
+                Droits Universitaires en Vigueur à l'ED-SEA
+              </h4>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm text-left text-gray-700">
+                  <thead className="text-xs text-white uppercase bg-[#162534]">
+                    <tr>
+                      <th className="px-6 py-4 rounded-tl-lg">Nationalité / Statut</th>
+                      <th className="px-6 py-4">Frais d'inscription (FCFA)</th>
+                      <th className="px-6 py-4 rounded-tr-lg">Frais de formation (FCFA)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="bg-white border-b hover:bg-gray-50">
+                      <td className="px-6 py-4 font-bold text-[#162534]">National (Régime Normal)</td>
+                      <td className="px-6 py-4">51 200</td>
+                      <td className="px-6 py-4 font-bold text-[#006900]">500 000</td>
+                    </tr>
+                    <tr className="bg-gray-50 border-b hover:bg-gray-100">
+                      <td className="px-6 py-4 font-bold text-[#162534]">Conseil de l'Entente</td>
+                      <td className="px-6 py-4">335 000</td>
+                      <td className="px-6 py-4 font-bold text-[#006900]">500 000</td>
+                    </tr>
+                    <tr className="bg-white border-b hover:bg-gray-50">
+                      <td className="px-6 py-4 font-bold text-[#162534]">CEDEAO</td>
+                      <td className="px-6 py-4">260 000</td>
+                      <td className="px-6 py-4 font-bold text-[#006900]">500 000</td>
+                    </tr>
+                    <tr className="bg-gray-50 hover:bg-gray-100">
+                      <td className="px-6 py-4 font-bold text-[#162534]">Autres nationalités</td>
+                      <td className="px-6 py-4">310 000</td>
+                      <td className="px-6 py-4 font-bold text-[#006900]">500 000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-xs text-gray-500 mt-4 italic">
+                * Les montants s'appliquent pour les 1ère, 2ème et 3ème années de thèse. Les frais de laboratoire, d'encadrement et de recherche sont fixés par Note de service du Recteur.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -274,6 +314,12 @@ export default function VitrinePage() {
                     <li>• Environnement & Traitement des Eaux</li>
                     <li>• Valorisation des Ressources Naturelles</li>
                   </ul>
+                  <div className="mt-6">
+                    <a href="/pdfs/profils_fdca.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-[#006900] hover:underline bg-green-50 px-4 py-2 rounded-lg border border-green-100">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                      Télécharger les profils d'entrée FDCA
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -295,6 +341,12 @@ export default function VitrinePage() {
                     <li>• Modélisation Atmosphérique</li>
                     <li>• Dynamique Côtière</li>
                   </ul>
+                  <div className="mt-6">
+                    <a href="/pdfs/profils_fdsm.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-[#006900] hover:underline bg-green-50 px-4 py-2 rounded-lg border border-green-100">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                      Télécharger les profils d'entrée CIPMA
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -316,6 +368,12 @@ export default function VitrinePage() {
                     <li>• Didactique de la Physique-Chimie</li>
                     <li>• Évaluation des Systèmes Éducatifs</li>
                   </ul>
+                  <div className="mt-6">
+                    <a href="/pdfs/profils_imsp.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-[#006900] hover:underline bg-green-50 px-4 py-2 rounded-lg border border-green-100">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                      Télécharger les informations IMSP
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -337,6 +395,88 @@ export default function VitrinePage() {
                     <li>• Analyse Mathématique</li>
                     <li>• Topologie</li>
                   </ul>
+                  <div className="mt-6">
+                    <a href="/pdfs/profils_fdsm.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-[#006900] hover:underline bg-green-50 px-4 py-2 rounded-lg border border-green-100">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                      Télécharger les profils d'entrée FDSM
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* A VENIR */}
+              <div className="mt-12 bg-white/10 p-8 rounded-xl border border-gray-600 border-dashed">
+                <h4 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
+                  <span className="bg-gray-700 text-xs px-2 py-1 rounded">À VENIR</span> 
+                  Formations Doctorales en préparation (FD-MPA)
+                </h4>
+                <div className="flex flex-wrap gap-3">
+                  <span className="bg-[#162534] text-gray-400 px-4 py-2 rounded-lg border border-gray-700 text-sm cursor-not-allowed">Mathématiques Fondamentales et Applications</span>
+                  <span className="bg-[#162534] text-gray-400 px-4 py-2 rounded-lg border border-gray-700 text-sm cursor-not-allowed">Statistique-Probabilité</span>
+                  <span className="bg-[#162534] text-gray-400 px-4 py-2 rounded-lg border border-gray-700 text-sm cursor-not-allowed">Recherche Opérationnelle</span>
+                  <span className="bg-[#162534] text-gray-400 px-4 py-2 rounded-lg border border-gray-700 text-sm cursor-not-allowed">Informatique</span>
+                  <span className="bg-[#162534] text-gray-400 px-4 py-2 rounded-lg border border-gray-700 text-sm cursor-not-allowed">Physique théorique et Applications</span>
+                  <span className="bg-[#162534] text-gray-400 px-4 py-2 rounded-lg border border-gray-700 text-sm cursor-not-allowed">Didactique des Sciences et technologies</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        {/* SECTION: LABORATOIRES & PARTENAIRES */}
+        <section id="recherche" className="py-20 relative bg-gray-50 border-t border-gray-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="text-center mb-16">
+              <h3 className="text-sm font-bold text-[#006900] uppercase tracking-widest mb-2">Recherche & International</h3>
+              <h2 className="text-3xl font-extrabold text-[#162534]">Laboratoires & Partenaires</h2>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12">
+              
+              {/* Laboratoires */}
+              <div className="bg-white rounded-xl p-8 shadow-md border border-gray-100">
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                  </div>
+                  <h3 className="text-2xl font-bold text-[#162534]">6 Laboratoires Rattachés</h3>
+                </div>
+                <ul className="space-y-4 text-sm text-gray-700 font-medium">
+                  <li className="flex gap-3"><span className="text-[#006900] font-bold">1.</span> <span>Laboratoire de Sciences des Matériaux et Modélisation (LaSMMO) <span className="text-gray-400 block text-xs">Arrêté n°169 du 16/02/2024</span></span></li>
+                  <li className="flex gap-3"><span className="text-[#006900] font-bold">2.</span> <span>Laboratoire de Chimie Physique-Matériaux et Modélisation Moléculaire (LCP3M) <span className="text-gray-400 block text-xs">Arrêté n°170 du 16/02/2024</span></span></li>
+                  <li className="flex gap-3"><span className="text-[#006900] font-bold">3.</span> <span>Laboratoire d’Étude et de recherche en Chimie Appliquée (LERCA) <span className="text-gray-400 block text-xs">Arrêté n°171 du 16/02/2024</span></span></li>
+                  <li className="flex gap-3"><span className="text-[#006900] font-bold">4.</span> <span>Laboratoire de Recherche en Informatique et d’Aide à la décision (LaRIAD) <span className="text-gray-400 block text-xs">Arrêté n°017 du 15/01/2025</span></span></li>
+                  <li className="flex gap-3"><span className="text-[#006900] font-bold">5.</span> <span>Laboratoire de Recherche en Mathématiques Fondamentales et Applications (LaRMFA) <span className="text-gray-400 block text-xs">Arrêté n°018 du 15/01/2025</span></span></li>
+                  <li className="flex gap-3"><span className="text-[#006900] font-bold">6.</span> <span>Laboratoire de Recherche en Physique Théorique et Applications (LaRPTA) <span className="text-gray-400 block text-xs">Arrêté n°249 du 14/03/2025</span></span></li>
+                </ul>
+              </div>
+
+              {/* Partenaires */}
+              <div className="bg-white rounded-xl p-8 shadow-md border border-gray-100">
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="w-12 h-12 bg-purple-50 text-purple-600 rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  </div>
+                  <h3 className="text-2xl font-bold text-[#162534]">Partenaires de Coopération</h3>
+                </div>
+                <div className="space-y-4">
+                  <a href="/pdfs/partenariat_una.pdf" target="_blank" rel="noopener noreferrer" className="block group border border-gray-200 rounded-lg p-4 hover:border-[#006900] hover:shadow-sm transition">
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm font-bold text-gray-800 group-hover:text-[#006900]">Accord Sectoriel UNA-EDSEA UAC</span>
+                      <span className="text-gray-400 group-hover:text-[#006900]">→</span>
+                    </div>
+                  </a>
+                  <a href="/pdfs/convention_toulouse.pdf" target="_blank" rel="noopener noreferrer" className="block group border border-gray-200 rounded-lg p-4 hover:border-[#006900] hover:shadow-sm transition">
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm font-bold text-gray-800 group-hover:text-[#006900]">Convention Cotutelle - Univ. de Toulouse</span>
+                      <span className="text-gray-400 group-hover:text-[#006900]">→</span>
+                    </div>
+                  </a>
+                  <a href="/pdfs/convention_vrije.pdf" target="_blank" rel="noopener noreferrer" className="block group border border-gray-200 rounded-lg p-4 hover:border-[#006900] hover:shadow-sm transition">
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm font-bold text-gray-800 group-hover:text-[#006900]">Convention Cotutelle - Vrije Universiteit Brussel</span>
+                      <span className="text-gray-400 group-hover:text-[#006900]">→</span>
+                    </div>
+                  </a>
                 </div>
               </div>
 
@@ -397,7 +537,7 @@ export default function VitrinePage() {
                 <h4 className="font-extrabold text-lg text-white uppercase tracking-tight">Université d'Abomey-Calavi</h4>
               </div>
               <p className="text-gray-400 text-sm max-w-sm">
-                École Doctorale Sciences Exactes et Appliquées (ED-SEA). Le pôle universitaire de référence pour l'innovation scientifique au Bénin.
+                École Doctorale des Sciences Exactes et Appliquées (ED-SEA). Le pôle universitaire de référence pour l'innovation scientifique au Bénin.
               </p>
             </div>
             <div>
@@ -412,9 +552,9 @@ export default function VitrinePage() {
             <div>
               <h5 className="font-bold text-lg mb-4 text-white">Contact</h5>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>Campus d'Abomey-Calavi</li>
-                <li>ed-sea@uac.bj</li>
-                <li>+229 00 00 00 00</li>
+                <li>Campus Universitaire d'Abomey-Calavi, 01 BP 526 Cotonou</li>
+                <li>ed-sea.uac@uac.bj ou edsea.uac@gmail.com</li>
+                <li>(+229) 0199549999 / 0197482094</li>
               </ul>
             </div>
           </div>
