@@ -425,60 +425,83 @@ export default function VitrinePage() {
         </section>
 
         {/* SECTION: LABORATOIRES & PARTENAIRES */}
-        <section id="recherche" className="py-20 relative bg-gray-50 border-t border-gray-200">
+        <section id="recherche" className="py-24 relative bg-gray-50 border-t border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-16">
               <h3 className="text-sm font-bold text-[#006900] uppercase tracking-widest mb-2">Recherche & International</h3>
               <h2 className="text-3xl font-extrabold text-[#162534]">Laboratoires & Partenaires</h2>
+              <p className="text-gray-600 mt-4 max-w-2xl mx-auto font-medium">
+                L’ED-SEA est une école doctorale structurée, entourée de laboratoires de pointe et connectée à un réseau de partenaires académiques nationaux et internationaux.
+              </p>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-12">
-              
-              {/* Laboratoires */}
-              <div className="bg-white rounded-xl p-8 shadow-md border border-gray-100">
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
-                  </div>
-                  <h3 className="text-2xl font-bold text-[#162534]">6 Laboratoires Rattachés</h3>
-                </div>
-                <ul className="space-y-4 text-sm text-gray-700 font-medium">
-                  <li className="flex gap-3"><span className="text-[#006900] font-bold">1.</span> <span>Laboratoire de Sciences des Matériaux et Modélisation (LaSMMO) <span className="text-gray-400 block text-xs">Arrêté n°169 du 16/02/2024</span></span></li>
-                  <li className="flex gap-3"><span className="text-[#006900] font-bold">2.</span> <span>Laboratoire de Chimie Physique-Matériaux et Modélisation Moléculaire (LCP3M) <span className="text-gray-400 block text-xs">Arrêté n°170 du 16/02/2024</span></span></li>
-                  <li className="flex gap-3"><span className="text-[#006900] font-bold">3.</span> <span>Laboratoire d’Étude et de recherche en Chimie Appliquée (LERCA) <span className="text-gray-400 block text-xs">Arrêté n°171 du 16/02/2024</span></span></li>
-                  <li className="flex gap-3"><span className="text-[#006900] font-bold">4.</span> <span>Laboratoire de Recherche en Informatique et d’Aide à la décision (LaRIAD) <span className="text-gray-400 block text-xs">Arrêté n°017 du 15/01/2025</span></span></li>
-                  <li className="flex gap-3"><span className="text-[#006900] font-bold">5.</span> <span>Laboratoire de Recherche en Mathématiques Fondamentales et Applications (LaRMFA) <span className="text-gray-400 block text-xs">Arrêté n°018 du 15/01/2025</span></span></li>
-                  <li className="flex gap-3"><span className="text-[#006900] font-bold">6.</span> <span>Laboratoire de Recherche en Physique Théorique et Applications (LaRPTA) <span className="text-gray-400 block text-xs">Arrêté n°249 du 14/03/2025</span></span></li>
-                </ul>
+            {/* Laboratoires associés */}
+            <div className="mb-20">
+              <div className="flex items-center gap-3 mb-8 border-b border-gray-200 pb-3">
+                <svg className="w-8 h-8 text-[#006900]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                <h3 className="text-2xl font-bold text-[#162534]">6 Laboratoires Rattachés</h3>
               </div>
-
-              {/* Partenaires */}
-              <div className="bg-white rounded-xl p-8 shadow-md border border-gray-100">
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="w-12 h-12 bg-purple-50 text-purple-600 rounded-lg flex items-center justify-center">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  { name: "Laboratoire de Sciences des Matériaux et Modélisation", acronym: "LaSMMO", decree: "Arrêté n°169 du 16/02/2024" },
+                  { name: "Laboratoire de Chimie Physique-Matériaux et Modélisation Moléculaire", acronym: "LCP3M", decree: "Arrêté n°170 du 16/02/2024" },
+                  { name: "Laboratoire d’Étude et de recherche en Chimie Appliquée", acronym: "LERCA", decree: "Arrêté n°171 du 16/02/2024" },
+                  { name: "Laboratoire de Recherche en Informatique et d’Aide à la décision", acronym: "LaRIAD", decree: "Arrêté n°017 du 15/01/2025" },
+                  { name: "Laboratoire de Recherche en Mathématiques Fondamentales et Applications", acronym: "LaRMFA", decree: "Arrêté n°018 du 15/01/2025" },
+                  { name: "Laboratoire de Recherche en Physique Théorique et Applications", acronym: "LaRPTA", decree: "Arrêté n°249 du 14/03/2025" }
+                ].map((lab, idx) => (
+                  <div key={idx} className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-100 transition-all duration-300 p-8 flex flex-col items-center text-center group">
+                    <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center text-[#162534] font-extrabold text-xl mb-6 group-hover:bg-[#006900] group-hover:text-white transition-colors duration-300 shadow-sm border border-gray-100">
+                      {lab.acronym.substring(0, 3)}
+                    </div>
+                    <h4 className="font-bold text-[#162534] text-sm mb-2">{lab.name}</h4>
+                    <span className="text-[#006900] font-extrabold text-lg mb-4">{lab.acronym}</span>
+                    <p className="text-xs text-gray-400 mt-auto font-medium">{lab.decree}</p>
                   </div>
-                  <h3 className="text-2xl font-bold text-[#162534]">Partenaires de Coopération</h3>
+                ))}
+              </div>
+            </div>
+
+            {/* Partenaires de coopération */}
+            <div>
+              <div className="flex items-center gap-3 mb-8 border-b border-gray-200 pb-3">
+                <svg className="w-8 h-8 text-[#006900]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
+                <h3 className="text-2xl font-bold text-[#162534]">Partenaires de Coopération</h3>
+              </div>
+              
+              <div className="space-y-12">
+                {/* Nationaux */}
+                <div>
+                  <h4 className="text-sm font-bold text-gray-500 mb-6 uppercase tracking-wider">Partenaires nationaux</h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <a href="/pdfs/partenariat_una.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-200 hover:border-[#006900] transition-all duration-300 p-6 flex flex-col items-center justify-center group h-48">
+                      <div className="h-24 w-full flex items-center justify-center mb-4">
+                        <img src="/logos/logo_una.png" alt="UNA EDSAE" className="max-h-full max-w-full object-contain transition duration-300" />
+                      </div>
+                      <span className="text-xs font-bold text-center text-gray-700 group-hover:text-[#006900]">Université Nationale d'Agriculture</span>
+                    </a>
+                  </div>
                 </div>
-                <div className="space-y-4">
-                  <a href="/pdfs/partenariat_una.pdf" target="_blank" rel="noopener noreferrer" className="block group border border-gray-200 rounded-lg p-4 hover:border-[#006900] hover:shadow-sm transition">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm font-bold text-gray-800 group-hover:text-[#006900]">Accord Sectoriel UNA-EDSEA UAC</span>
-                      <span className="text-gray-400 group-hover:text-[#006900]">→</span>
-                    </div>
-                  </a>
-                  <a href="/pdfs/convention_toulouse.pdf" target="_blank" rel="noopener noreferrer" className="block group border border-gray-200 rounded-lg p-4 hover:border-[#006900] hover:shadow-sm transition">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm font-bold text-gray-800 group-hover:text-[#006900]">Convention Cotutelle - Univ. de Toulouse</span>
-                      <span className="text-gray-400 group-hover:text-[#006900]">→</span>
-                    </div>
-                  </a>
-                  <a href="/pdfs/convention_vrije.pdf" target="_blank" rel="noopener noreferrer" className="block group border border-gray-200 rounded-lg p-4 hover:border-[#006900] hover:shadow-sm transition">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm font-bold text-gray-800 group-hover:text-[#006900]">Convention Cotutelle - Vrije Universiteit Brussel</span>
-                      <span className="text-gray-400 group-hover:text-[#006900]">→</span>
-                    </div>
-                  </a>
+
+                {/* Internationaux */}
+                <div>
+                  <h4 className="text-sm font-bold text-gray-500 mb-6 uppercase tracking-wider">Partenaires internationaux</h4>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <a href="/pdfs/convention_toulouse.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-200 hover:border-[#006900] transition-all duration-300 p-6 flex flex-col items-center justify-center group h-48">
+                      <div className="h-24 w-full flex items-center justify-center mb-4">
+                        <img src="/logos/logo_toulouse.png" alt="Université de Toulouse" className="max-h-full max-w-full object-contain transition duration-300" />
+                      </div>
+                      <span className="text-xs font-bold text-center text-gray-700 group-hover:text-[#006900]">Université de Toulouse</span>
+                    </a>
+                    
+                    <a href="/pdfs/convention_vrije.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-200 hover:border-[#006900] transition-all duration-300 p-6 flex flex-col items-center justify-center group h-48">
+                      <div className="h-24 w-full flex items-center justify-center mb-4">
+                        <img src="/logos/logo_vrije.png" alt="Vrije Universiteit Brussel" className="max-h-full max-w-full object-contain transition duration-300" />
+                      </div>
+                      <span className="text-xs font-bold text-center text-gray-700 group-hover:text-[#006900]">Vrije Universiteit Brussel</span>
+                    </a>
+                  </div>
                 </div>
               </div>
 
