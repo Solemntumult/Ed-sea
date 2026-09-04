@@ -18,7 +18,7 @@ export default function VitrinePage() {
       <main className="flex-grow">
         
         {/* HERO SECTION / BANNIERE */}
-        <section className="relative text-white py-24 sm:py-32 overflow-hidden border-b-4 border-gray-200 bg-cover bg-center" style={{ backgroundImage: "url('/hero_campus.jpg')" }}>
+        <section className="relative text-white py-16 lg:py-32 overflow-hidden border-b-4 border-gray-200 bg-cover bg-center" style={{ backgroundImage: "url('/hero_campus.jpg')" }}>
           {/* Overlay dégradé sombre pour assurer une lisibilité parfaite du texte */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#162534]/95 via-[#0b1722]/80 to-transparent z-0"></div>
           {/* Motif UAC subtil */}
@@ -44,9 +44,9 @@ export default function VitrinePage() {
 
 
         {/* SECTION: PRÉSENTATION & MOT DU DIRECTEUR */}
-        <section id="presentation" className="py-20 relative bg-transparent">
+        <section id="presentation" className="py-12 lg:py-20 relative bg-transparent">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div>
                 <h3 className="text-sm font-bold text-[#006900] uppercase tracking-widest mb-2">Mot de la Direction</h3>
                 <h2 className="text-3xl font-extrabold text-[#162534] mb-6">Bienvenue à l'ED-SEA</h2>
@@ -63,7 +63,7 @@ export default function VitrinePage() {
                 </div>
               </div>
               <div className="bg-white/80 backdrop-blur-md rounded-2xl p-2 shadow-xl border border-gray-200">
-                <div className="relative p-8 text-center">
+                <div className="relative p-5 md:p-8 text-center">
                   <img src="/logo_edsea.jpg" alt="Emblème ED-SEA" className="h-32 mx-auto mb-6 drop-shadow-md" />
                   <h4 className="font-bold text-xl mb-4 text-[#006900]">L'ED-SEA en Chiffres</h4>
                   <div className="grid grid-cols-2 gap-3 text-left border-t border-gray-200 pt-4">
@@ -92,7 +92,7 @@ export default function VitrinePage() {
 
 
         {/* SECTION: ACTUALITÉS */}
-        <section id="actualites" className="py-20 relative bg-white/40 backdrop-blur-sm border-y border-gray-200">
+        <section id="actualites" className="py-12 lg:py-20 relative bg-white/40 backdrop-blur-sm border-y border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="flex justify-between items-end mb-10">
               <div>
@@ -108,7 +108,7 @@ export default function VitrinePage() {
                   {/* Filtre pour atténuer l'effet "IA" et donner un aspect photographique plus naturel */}
                   <div className="absolute inset-0 bg-yellow-900/10 mix-blend-multiply"></div>
                 </div>
-                <div className="p-6">
+                <div className="p-5 md:p-6">
                   <span className="text-xs text-[#006900] font-bold uppercase mb-2 block">Candidature • 2026-2027</span>
                   <h4 className="text-xl font-bold text-[#162534] mb-3 leading-tight">Lancement du 2e Appel à candidatures</h4>
                   <p className="text-sm text-gray-600 mb-4 line-clamp-3">
@@ -123,7 +123,7 @@ export default function VitrinePage() {
                   {/* Filtre pour atténuer l'effet "IA" et donner un aspect photographique plus naturel */}
                   <div className="absolute inset-0 bg-yellow-900/10 mix-blend-multiply"></div>
                 </div>
-                <div className="p-6">
+                <div className="p-5 md:p-6">
                   <span className="text-xs text-[#006900] font-bold uppercase mb-2 block">Académique • 12 Juin 2026</span>
                   <h4 className="text-xl font-bold text-[#162534] mb-3 leading-tight">Programme des Soutenances (Juin)</h4>
                   <p className="text-sm text-gray-600 mb-4 line-clamp-3">
@@ -138,7 +138,7 @@ export default function VitrinePage() {
                   {/* Filtre pour atténuer l'effet "IA" et donner un aspect photographique plus naturel */}
                   <div className="absolute inset-0 bg-yellow-900/10 mix-blend-multiply"></div>
                 </div>
-                <div className="p-6">
+                <div className="p-5 md:p-6">
                   <span className="text-xs text-[#006900] font-bold uppercase mb-2 block">Recherche • 5 Mai 2026</span>
                   <h4 className="text-xl font-bold text-[#162534] mb-3 leading-tight">Colloque International du CIPMA</h4>
                   <p className="text-sm text-gray-600 mb-4 line-clamp-3">
@@ -153,7 +153,7 @@ export default function VitrinePage() {
 
 
         {/* SECTION: ADMISSIONS & OFFRES (Montage Web inclus) */}
-        <section id="admissions" className="py-20 relative bg-transparent">
+        <section id="admissions" className="py-12 lg:py-20 relative bg-transparent">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-12">
               <h3 className="text-sm font-bold text-[#006900] uppercase tracking-widest mb-2">Rejoindre l'école</h3>
@@ -163,7 +163,7 @@ export default function VitrinePage() {
 
             <div className="grid lg:grid-cols-2 gap-8 mb-12">
               {/* Infos de l'Appel */}
-              <div className="bg-white/90 backdrop-blur-md p-8 rounded-xl shadow-lg border border-gray-100 border-t-4 border-t-[#006900]">
+              <div className="bg-white/90 backdrop-blur-md p-5 md:p-8 rounded-xl shadow-lg border border-gray-100 border-t-4 border-t-[#006900]">
                 <h4 className="text-xl font-bold text-[#162534] mb-6">
                   Critères et Pièces à fournir (Dossier)
                 </h4>
@@ -185,7 +185,7 @@ export default function VitrinePage() {
                 <h4 className="text-xl font-bold text-[#162534] mb-4 border-t border-gray-200 pt-6">
                   Frais d'Étude de Dossier
                 </h4>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="bg-gray-50/80 p-4 rounded-lg border border-gray-200 shadow-sm">
                     <p className="font-bold text-[#162534] text-sm">Quittance CUCA</p>
                     <p className="text-2xl text-[#006900] font-extrabold mt-1">20 000 F</p>
@@ -200,7 +200,7 @@ export default function VitrinePage() {
               </div>
 
               {/* Calendrier */}
-              <div className="bg-[#162534]/95 backdrop-blur-md p-8 rounded-xl shadow-lg text-white border-t-4 border-t-[#006900] relative overflow-hidden">
+              <div className="bg-[#162534]/95 backdrop-blur-md p-5 md:p-8 rounded-xl shadow-lg text-white border-t-4 border-t-[#006900] relative overflow-hidden">
                 <div className="absolute right-0 top-0 w-64 h-64 bg-white opacity-5 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
                 <h4 className="text-xl font-bold mb-6 text-white relative z-10">
                   Calendrier de la Campagne
@@ -240,7 +240,7 @@ export default function VitrinePage() {
             </div>
 
             {/* Droits Universitaires */}
-            <div className="bg-white/90 backdrop-blur-md p-8 rounded-xl shadow-lg border border-gray-100 border-t-4 border-t-[#006900] mt-12">
+            <div className="bg-white/90 backdrop-blur-md p-5 md:p-8 rounded-xl shadow-lg border border-gray-100 border-t-4 border-t-[#006900] mt-12">
               <h4 className="text-xl font-bold text-[#162534] mb-6">
                 Droits Universitaires en Vigueur à l'ED-SEA
               </h4>
@@ -297,7 +297,7 @@ export default function VitrinePage() {
             <div className="space-y-8">
               
               {/* FDCA */}
-              <div className="flex flex-col md:flex-row gap-8 bg-white rounded-xl p-8 shadow-xl border border-gray-200 hover:border-[#006900] transition duration-300">
+              <div className="flex flex-col md:flex-row gap-8 bg-white rounded-xl p-5 md:p-8 shadow-xl border border-gray-200 hover:border-[#006900] transition duration-300">
                 <div className="md:w-1/3">
                   <span className="inline-block px-3 py-1 bg-[#162534] text-white rounded font-bold text-xs mb-4 uppercase tracking-widest">Chimie</span>
                   <h3 className="text-2xl font-extrabold text-[#162534] mb-2">Formation Doctorale en Chimie et Applications (FDCA)</h3>
@@ -324,7 +324,7 @@ export default function VitrinePage() {
               </div>
 
               {/* CIPMA */}
-              <div className="flex flex-col md:flex-row gap-8 bg-white rounded-xl p-8 shadow-xl border border-gray-200 hover:border-[#006900] transition duration-300">
+              <div className="flex flex-col md:flex-row gap-8 bg-white rounded-xl p-5 md:p-8 shadow-xl border border-gray-200 hover:border-[#006900] transition duration-300">
                 <div className="md:w-1/3">
                   <span className="inline-block px-3 py-1 bg-[#162534] text-white rounded font-bold text-xs mb-4 uppercase tracking-widest">Océanographie & Physique</span>
                   <h3 className="text-2xl font-extrabold text-[#162534] mb-2">Chaire Internationale en Physique Mathématique et Applications (CIPMA)</h3>
@@ -351,7 +351,7 @@ export default function VitrinePage() {
               </div>
 
               {/* IMSP */}
-              <div className="flex flex-col md:flex-row gap-8 bg-white rounded-xl p-8 shadow-xl border border-gray-200 hover:border-[#006900] transition duration-300">
+              <div className="flex flex-col md:flex-row gap-8 bg-white rounded-xl p-5 md:p-8 shadow-xl border border-gray-200 hover:border-[#006900] transition duration-300">
                 <div className="md:w-1/3">
                   <span className="inline-block px-3 py-1 bg-[#162534] text-white rounded font-bold text-xs mb-4 uppercase tracking-widest">Didactique</span>
                   <h3 className="text-2xl font-extrabold text-[#162534] mb-2">Institut de Mathématiques et de Sciences Physiques (IMSP)</h3>
@@ -378,7 +378,7 @@ export default function VitrinePage() {
               </div>
 
               {/* FDSM */}
-              <div className="flex flex-col md:flex-row gap-8 bg-white rounded-xl p-8 shadow-xl border border-gray-200 hover:border-[#006900] transition duration-300">
+              <div className="flex flex-col md:flex-row gap-8 bg-white rounded-xl p-5 md:p-8 shadow-xl border border-gray-200 hover:border-[#006900] transition duration-300">
                 <div className="md:w-1/3">
                   <span className="inline-block px-3 py-1 bg-[#162534] text-white rounded font-bold text-xs mb-4 uppercase tracking-widest">Mathématiques</span>
                   <h3 className="text-2xl font-extrabold text-[#162534] mb-2">Faculté des Sciences (FDSM)</h3>
@@ -405,7 +405,7 @@ export default function VitrinePage() {
               </div>
 
               {/* A VENIR */}
-              <div className="mt-12 bg-white/10 p-8 rounded-xl border border-gray-600 border-dashed">
+              <div className="mt-12 bg-white/10 p-5 md:p-8 rounded-xl border border-gray-600 border-dashed">
                 <h4 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
                   <span className="bg-gray-700 text-xs px-2 py-1 rounded">À VENIR</span> 
                   Formations Doctorales en préparation (FD-MPA)
@@ -425,7 +425,7 @@ export default function VitrinePage() {
         </section>
 
         {/* SECTION: LABORATOIRES & PARTENAIRES */}
-        <section id="recherche" className="py-24 relative bg-gray-50 border-t border-gray-200">
+        <section id="recherche" className="py-12 lg:py-24 relative bg-gray-50 border-t border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-16">
               <h3 className="text-sm font-bold text-[#006900] uppercase tracking-widest mb-2">Recherche & International</h3>
@@ -450,7 +450,7 @@ export default function VitrinePage() {
                   { name: "Laboratoire de Recherche en Mathématiques Fondamentales et Applications", acronym: "LaRMFA", decree: "Arrêté n°018 du 15/01/2025" },
                   { name: "Laboratoire de Recherche en Physique Théorique et Applications", acronym: "LaRPTA", decree: "Arrêté n°249 du 14/03/2025" }
                 ].map((lab, idx) => (
-                  <div key={idx} className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-100 transition-all duration-300 p-8 flex flex-col items-center justify-center text-center group h-full">
+                  <div key={idx} className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-100 transition-all duration-300 p-5 md:p-8 flex flex-col items-center justify-center text-center group h-full">
                     <h4 className="font-bold text-[#162534] text-sm mb-2">{lab.name}</h4>
                     <span className="text-[#006900] font-extrabold text-lg mb-4">{lab.acronym}</span>
                     <p className="text-xs text-gray-400 mt-auto font-medium">{lab.decree}</p>
@@ -466,21 +466,21 @@ export default function VitrinePage() {
               </div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <a href="/pdfs/partenariat_una.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-200 hover:border-[#006900] transition-all duration-300 p-6 flex flex-col items-center justify-center group h-48">
+                <a href="/pdfs/partenariat_una.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-200 hover:border-[#006900] transition-all duration-300 p-4 md:p-6 flex flex-col items-center justify-center group h-48">
                   <div className="h-24 w-full flex items-center justify-center mb-4">
                     <img src="/logos/logo_una.png" alt="UNA EDSAE" className="max-h-full max-w-full object-contain transition duration-300" />
                   </div>
                   <span className="text-xs font-bold text-center text-gray-700 group-hover:text-[#006900]">Université Nationale d'Agriculture</span>
                 </a>
 
-                <a href="/pdfs/convention_toulouse.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-200 hover:border-[#006900] transition-all duration-300 p-6 flex flex-col items-center justify-center group h-48">
+                <a href="/pdfs/convention_toulouse.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-200 hover:border-[#006900] transition-all duration-300 p-4 md:p-6 flex flex-col items-center justify-center group h-48">
                   <div className="h-24 w-full flex items-center justify-center mb-4">
                     <img src="/logos/logo_toulouse.png" alt="Université de Toulouse" className="max-h-full max-w-full object-contain transition duration-300" />
                   </div>
                   <span className="text-xs font-bold text-center text-gray-700 group-hover:text-[#006900]">Université de Toulouse</span>
                 </a>
                 
-                <a href="/pdfs/convention_vrije.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-200 hover:border-[#006900] transition-all duration-300 p-6 flex flex-col items-center justify-center group h-48">
+                <a href="/pdfs/convention_vrije.pdf" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-200 hover:border-[#006900] transition-all duration-300 p-4 md:p-6 flex flex-col items-center justify-center group h-48">
                   <div className="h-24 w-full flex items-center justify-center mb-4">
                     <img src="/logos/logo_vrije.png" alt="Vrije Universiteit Brussel" className="max-h-full max-w-full object-contain transition duration-300" />
                   </div>
@@ -495,7 +495,7 @@ export default function VitrinePage() {
 
       {/* SECTION NEWSLETTER (Effet Parallaxe "Surprise") */}
       <section 
-        className="relative py-28 bg-fixed bg-top bg-cover mt-auto" 
+        className="relative py-16 lg:py-28 bg-fixed bg-top bg-cover mt-auto" 
         style={{ backgroundImage: "url('https://doctorat-unique.uac.bj/images/cta-secion-back.jpg')" }}
       >
         {/* Voile d'assombrissement allégé pour rendre l'image plus éclatante */}
